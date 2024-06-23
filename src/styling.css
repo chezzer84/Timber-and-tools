@@ -26,7 +26,7 @@ body {
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../images/handyman.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -136,7 +136,7 @@ main p {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(6, 5vw);
-  grid-gap: 12px;
+  grid-gap: 14px;
 }
 
 .gallery__img {
@@ -199,7 +199,7 @@ footer {
 
 footer h2 {
   font-weight: 700;
-  font-size: 54px;
+  font-size: 70px;
   line-height: 30px;
   margin-left: 320px;
   margin-bottom: 40px;
