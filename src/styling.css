@@ -77,6 +77,7 @@ main {
 
 .about {
   margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 main h2 {
@@ -107,29 +108,30 @@ main p {
 }
 
 .offerings {
-  background-color: whitesmoke;
+  background-color: #2a2a2a;
   padding: 40px 40px 60px 40px;
 }
 
 .offerings h3 {
-  color: black;
-  font-size: 58px;
+  color: #aa6833;
+  font-size: 62px;
+  text-align: center;
 }
 
 .offerings h4 {
-  color: black;
-  opacity: 0.7;
-  margin-bottom: 18px;
+  text-align: center;
+  color: white;
+  opacity: 0.8;
+  margin-bottom: 20px;
 }
 
 .card-title {
-  color: #aa6833;
+  color: #3273aa;
 }
 
 .image-gallery {
   padding: 20px 20px 20px 20px;
-  background-color: #2a2a2a;
-  margin-bottom: 30px;
+  background-color: white;
 }
 
 .gallery {
@@ -181,14 +183,14 @@ main p {
 
 .grid-3-col-with-first-col-narrow {
   grid-template-columns: 1fr 2fr 2fr;
-  margin: 0px 40px 0px 40px;
+  margin: 75px 40px 0px 40px;
 }
 
 footer {
   color: white;
   background-image: linear-gradient(
-      rgba(39, 32, 68, 0.7),
-      rgba(39, 32, 68, 0.7)
+      rgba(39, 32, 68, 0.8),
+      rgba(39, 32, 68, 0.8)
     ),
     url(../images/footer.jpg);
   background-repeat: no-repeat;
@@ -204,19 +206,20 @@ footer h2 {
   margin-left: 320px;
   margin-bottom: 40px;
   margin-top: 40px;
-  color: white;
+  color: #aa6833;
 }
 
 footer h3 {
-  font-weight: 900;
-  font-size: 25px;
+  font-weight: bolder;
+  font-size: 40px;
   line-height: 30px;
-  color: #aa6833;
+  color: white;
+  margin-bottom: 30px;
 }
 
 footer p {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 24px;
 }
 
@@ -264,7 +267,7 @@ footer a {
   }
 
   .offerings h4 {
-    font-size: 20px;
+    font-size: 18px;
   }
   .grid {
     grid-template-columns: 1fr;
@@ -285,7 +288,6 @@ footer a {
 
   .image-gallery {
     padding: 10px;
-    background-color: #2a2a2a;
     margin-bottom: 20px;
   }
 
