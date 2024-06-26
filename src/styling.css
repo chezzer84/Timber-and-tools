@@ -273,7 +273,7 @@ footer a {
 
 @media (max-width: 960px) {
   header {
-    padding: 20px 10px 20px 10px;
+    padding: 20px 20px 20px 20px;
   }
 
   header h1 {
@@ -290,6 +290,10 @@ footer a {
 
   main h3 {
     font-size: 32px;
+  }
+
+  .intro-text {
+    margin-top: 20px;
   }
 
   .offerings {
@@ -327,9 +331,9 @@ footer a {
 
   .gallery {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(19, 5vw);
-    grid-gap: 12px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(18, 12vw);
+    grid-gap: 7px;
   }
 
   .gallery__img {
@@ -342,44 +346,76 @@ footer a {
 
   .gallery__item--1 {
     grid-column-start: 1;
-    grid-column-end: 7;
+    grid-column-end: 2;
     grid-row-start: 1;
-    grid-row-end: 12;
+    grid-row-end: 7;
     margin-bottom: 0;
   }
 
   .gallery__item--2 {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 12;
-    grid-row-end: 16;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
     margin-bottom: 0;
   }
 
   .gallery__item--3 {
-    grid-column-start: 4;
-    grid-column-end: 7;
-    grid-row-start: 12;
-    grid-row-end: 16;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 7;
     margin-bottom: 0;
   }
 
   .gallery__item--4 {
     grid-column-start: 1;
-    grid-column-end: 7;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 10;
+    margin-bottom: 0;
+  }
+  .gallery__item--5 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 10;
+    grid-row-end: 13;
+    margin-bottom: 0;
+  }
+
+  .gallery__item--6 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 13;
+    grid-row-end: 19;
+    margin-bottom: 0;
+  }
+  .gallery__item--7 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 13;
+    grid-row-end: 16;
+    margin-bottom: 0;
+  }
+  .gallery__item--8 {
+    grid-column-start: 1;
+    grid-column-end: 2;
     grid-row-start: 16;
-    grid-row-end: 20;
+    grid-row-end: 19;
     margin-bottom: 0;
   }
 
   footer {
-    padding: 30px;
+    padding: 20px;
   }
 
   footer h2 {
     display: none;
   }
 
+  footer h3 {
+    font-size: 36px;
+  }
   footer img {
     display: none;
   }
