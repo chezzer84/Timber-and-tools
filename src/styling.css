@@ -388,7 +388,7 @@ i.fa-arrow-left:hover {
   .gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(18, 12vw);
+    grid-template-rows: repeat(9, 12vw);
     grid-gap: 7px;
   }
 
