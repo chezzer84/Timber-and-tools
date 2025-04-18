@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Timber and Tools Services</title>
+    <link rel="stylesheet" href="contact_form.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <h1>Request a Service</h1>
+        <p class="form-description">
+          Fill out this form to request our timber and tools services. We'll get
+          back to you as soon as possible.
+        </p>
+
+        <div
+          id="success-message"
+          class="alert alert-success"
+          style="display: none"
+        >
+          Thank you! Your request has been submitted. We will contact you
+          shortly.
+        </div>
+
+        <!-- Important: Add data-netlify="true" and name="contact" attributes -->
+        <form
+          id="contactForm"
+          name="timber-contact"
+          method="POST"
+          data-netlify="true"
+        >
+          <!-- Important: Add this hidden field -->
+          <input type="hidden" name="form-name" value="timber-contact" />
+
+          <div class="form-group">
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" required />
+            <span class="error-message" id="nameError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required />
+            <span class="error-message" id="emailError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" required />
+            <span class="error-message" id="phoneError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" />
+          </div>
+
+          <div class="form-group">
+            <label for="job_description">Job Description *</label>
+            <textarea
+              id="job_description"
+              name="job_description"
+              rows="5"
+              required
+            ></textarea>
+            <span class="error-message" id="jobDescriptionError"></span>
+          </div>
+
+          <div class="form-group">
+            <button type="submit" class="submit-btn">
+              <i class="fas fa-paper-plane"></i> Submit Request
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <h2>Contact Information</h2>
+        <div class="info-item">
+          <i class="fas fa-envelope"></i>
+          <p>timberandtoolsservices@gmail.com</p>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-tools"></i>
+          <p>Professional Tools & Timber Services</p>
+        </div>
+        <div class="services-list">
+          <h3>Our Services Include:</h3>
+          <ul>
+            <li>Tree Trimming & Removal</li>
+            <li>Timber Maintenance</li>
+            <li>Custom Woodworking</li>
+            <li>Tool Repair & Maintenance</li>
+            <li>Garden & Landscape Services</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="contact_form.js"></script>
+  </body>
+</html>
