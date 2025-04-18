@@ -32,16 +32,8 @@
           shortly.
         </div>
 
-        <!-- Important: Add data-netlify="true" and name="contact" attributes -->
-        <form
-          id="contactForm"
-          name="timber-contact"
-          method="POST"
-          data-netlify="true"
-        >
-          <!-- Important: Add this hidden field -->
-          <input type="hidden" name="form-name" value="timber-contact" />
-
+        <!-- Using Netlify's recommended simpler syntax -->
+        <form id="contactForm" name="timber-contact" method="POST" netlify>
           <div class="form-group">
             <label for="name">Name *</label>
             <input type="text" id="name" name="name" required />
