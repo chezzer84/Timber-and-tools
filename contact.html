@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us - Timber and Tools Services</title>
-    <link rel="stylesheet" href="contact_form.css" />
+    <link rel="stylesheet" href="src/contact_form.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
@@ -15,11 +15,16 @@
     />
   </head>
   <body>
-    <div class="container">
+    <div class="back-link">
+      <a href="https://timberandtoolsservices.com.au">
+        <i class="fas fa-arrow-left"></i> Back to Home
+      </a>
+    </div>
+    <div name="contactus" class="container">
       <div class="form-container">
         <h1>Request a Service</h1>
         <p class="form-description">
-          Fill out this form to request our timber and tools services. We'll get
+          Fill out this form to submit an enquiry or request a quote. We'll get
           back to you as soon as possible.
         </p>
 
@@ -33,7 +38,13 @@
         </div>
 
         <!-- Using Netlify's recommended simpler syntax -->
-        <form id="contactForm" name="timber-contact" method="POST" netlify>
+        <form
+          id="contactForm"
+          name="timber-contact"
+          method="POST"
+          netlify
+          action="/thank-you.html"
+        >
           <div class="form-group">
             <label for="name">Name *</label>
             <input type="text" id="name" name="name" required />
@@ -54,7 +65,7 @@
 
           <div class="form-group">
             <label for="address">Address</label>
-            <input type="text" id="address" name="address" />
+            <input type="text" id="Suburb" name="Suburb" />
           </div>
 
           <div class="form-group">
@@ -83,17 +94,19 @@
           <p>timberandtoolsservices@gmail.com</p>
         </div>
         <div class="info-item">
-          <i class="fas fa-tools"></i>
-          <p>Professional Tools & Timber Services</p>
+          <i class="fas fa-phone"></i>
+          <p>0403979802</p>
         </div>
         <div class="services-list">
           <h3>Our Services Include:</h3>
           <ul>
-            <li>Tree Trimming & Removal</li>
-            <li>Timber Maintenance</li>
-            <li>Custom Woodworking</li>
-            <li>Tool Repair & Maintenance</li>
-            <li>Garden & Landscape Services</li>
+            <li>Decking: New Builds, Repairs & Upgrades</li>
+            <li>Timber Cladding & Feature Walls</li>
+            <li>Pergolas, Patios & Outdoor Structures</li>
+            <li>Door & Window Installation</li>
+            <li>Skirting, Architraves & Finishing Touches</li>
+            <li>Built-In Shelving & Storage Solutions</li>
+            <li>General Carpentry Repairs & Maintenance</li>
           </ul>
         </div>
       </div>

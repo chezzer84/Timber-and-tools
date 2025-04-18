@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You - Timber and Tools Services</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <style>
+      /* Base Styles */
+      :root {
+        --primary-color: #aa6833;
+        --secondary-color: #3273aa;
+        --accent-color: #a3b18a;
+        --light-color: #dad7cd;
+        --dark-color: #2a2a2a;
+        --success-color: #344e41;
+        --border-radius: 6px;
+        --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Roboto", sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: lightgrey;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      /* Thank You Container */
+      .thank-you-container {
+        max-width: 800px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: var(--box-shadow);
+        overflow: hidden;
+        text-align: center;
+        padding: 50px 40px;
+      }
+
+      .icon-container {
+        background-color: var(--light-color);
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 30px;
+      }
+
+      .icon-container i {
+        font-size: 60px;
+        color: var(--success-color);
+      }
+
+      h1 {
+        color: var(--secondary-color);
+        margin-bottom: 20px;
+        font-size: 2.5rem;
+      }
+
+      p {
+        font-size: 18px;
+        color: #555;
+        margin-bottom: 30px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .home-button {
+        display: inline-block;
+        background-color: var(--primary-color);
+        color: white;
+        text-decoration: none;
+        padding: 12px 30px;
+        border-radius: var(--border-radius);
+        font-weight: 500;
+        transition: background-color 0.3s;
+        margin-top: 10px;
+      }
+
+      .home-button:hover {
+        background-color: var(--dark-color);
+      }
+
+      .home-button i {
+        margin-right: 8px;
+      }
+
+      .contact-info {
+        margin-top: 40px;
+        padding-top: 30px;
+        border-top: 1px solid var(--light-color);
+      }
+
+      .contact-info p {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      .contact-info i {
+        color: var(--secondary-color);
+        margin-right: 8px;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .thank-you-container {
+          padding: 40px 30px;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .thank-you-container {
+          padding: 30px 20px;
+        }
+
+        .icon-container {
+          width: 90px;
+          height: 90px;
+        }
+
+        .icon-container i {
+          font-size: 45px;
+        }
+
+        h1 {
+          font-size: 1.8rem;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="thank-you-container">
+      <div class="icon-container">
+        <i class="fas fa-check"></i>
+      </div>
+
+      <h1>Thank You!</h1>
+
+      <p>
+        Your message has been successfully submitted. We appreciate you choosing
+        Timber and Tools Services for your needs.
+      </p>
+
+      <p>
+        Our team will review your request and get back to you as soon as
+        possible, usually within 1-2 business days.
+      </p>
+
+      <a href="https://timberandtoolsservices.com.au" class="home-button">
+        <i class="fas fa-home"></i> Return to Homepage
+      </a>
+
+      <div class="contact-info">
+        <p><i class="fas fa-envelope"></i> timberandtoolsservices@gmail.com</p>
+        <p><i class="fas fa-phone"></i> 0403979802</p>
+      </div>
+    </div>
+  </body>
+</html>
