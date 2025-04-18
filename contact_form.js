@@ -33,8 +33,8 @@ document.addEventListener("DOMContentLoaded", function () {
       isValid = false;
     }
 
-    // Phone validation
-    if (!validatePhone(phoneInput.value.trim())) {
+    // Phone validation optional but validate if provided
+    if (phoneValue !== "" && !validatePhone(phoneValue)) {
       phoneError.textContent = "Please enter a valid phone number";
       isValid = false;
     }
