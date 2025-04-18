@@ -42,7 +42,7 @@ body {
 .form-container {
   flex: 1;
   min-width: 300px;
-  padding: 40px;
+  padding: 40px 40px 40px 0px;
 }
 
 h1 {
@@ -217,6 +217,16 @@ textarea:focus {
   border: 1px solid var(--error-color);
 }
 
+/* Logo Styling */
+.logo-container {
+  margin-bottom: 2px;
+}
+
+.company-logo {
+  max-width: 200px;
+  height: auto;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .container {
@@ -234,12 +244,18 @@ textarea:focus {
   .back-link {
     padding: 0 15px;
   }
-}
 
-@media (max-width: 480px) {
   .form-container,
   .contact-info {
     padding: 20px;
+  }
+
+  .logo-container {
+    display: none; /* This will completely hide the logo on mobile */
+  }
+
+  .company-logo {
+    display: none;
   }
 
   h1 {
